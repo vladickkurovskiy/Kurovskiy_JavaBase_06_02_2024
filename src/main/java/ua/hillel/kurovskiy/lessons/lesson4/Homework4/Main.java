@@ -8,8 +8,11 @@ public class Main {
         int l = 20; // Довжина
         int volume = h * w * l;
 
+        int length = h + w + l;
 
         System.out.println("Об'єм паралелепіпеда = " + volume);
+            System.out.println();
+        System.out.println("Сума довжин всіх сторін = " + length);
 
     }
 }
