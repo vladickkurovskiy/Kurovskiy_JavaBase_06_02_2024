@@ -1,4 +1,4 @@
-package ua.hillel.kurovskiy.lessos.lesson1;
+package ua.hillel.kurovskiy.lessons.lesson1;
 
 public class Main {
 
