@@ -9,7 +9,7 @@ public class Main {
         int volume = h * w * l;
 
 
-        System.out.println("ого = " + volume);
+        System.out.println("Об'єм паралелепіпеда = " + volume);
 
     }
 }
