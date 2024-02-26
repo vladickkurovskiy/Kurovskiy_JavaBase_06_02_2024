@@ -119,9 +119,10 @@ public class Main {
 
         //СЕРЕДНІ АРИФМЕТИЧНІ КОМАНД
         int Team1Points = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1)/5;
-        int Team2Points = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
         System.out.println("Середнє арифметичне першої команди = " + Team1Points);
-        System.out.println("Середнє арифметичне першої команди = " + Team2Points);
+
+        int Team2Points = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
+        System.out.println("Середнє арифметичне другої команди = " + Team2Points);
 
         System.out.println();
         System.out.println("Натисніть \"Enter\" для продовження");
@@ -130,11 +131,11 @@ public class Main {
         //ПІДСУМОК ТА ВИЗНАЧЕННЯ ПЕРЕМОЖЦЯ
         System.out.println("По підсумкам матча та підрахунку середньго арифметичного: ");
         if (Team1Points > Team2Points) {
-            System.out.println("Перемагає команда - " + '\"' + Team1 + '\"' + "!!!");
+            System.out.println("Перемагає команда " + '\"' + Team1 + '\"' + ", набравши " + Team1Points + " очків!!!");
         } else if (Team1Points < Team2Points) {
-            System.out.println("Перемагає команда - " + '\"' + Team2 + '\"' + "!!!");
+            System.out.println("Перемагає команда " + '\"' + Team2 + '\"' + ", набравши " + Team2Points + " очків!!!");
         } else if (Team1Points == Team2Points) {
-            System.out.println("Об'являється нічия та перемагають обидві команди!!!");
+            System.out.println("Об'являється нічия та перемагають обидві команди!!!" + ", набравши" + Team1Points + "очків!!!");
             System.out.println("ВІТАЄМО!!!!");
         }
 
