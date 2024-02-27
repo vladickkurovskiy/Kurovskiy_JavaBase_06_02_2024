@@ -17,18 +17,18 @@ public class Main {
 
         for (int i = 0; i < 5; i++) {
             Cargument = (int) (Math.random() * 11);
-            System.out.println("Комп'ютер загадав число, введіть ваше значення нижче!" + Cargument);
+            System.out.println("Комп'ютер загадав число, введіть ваше значення нижче!");
             Uargument = scanner.nextInt();
-            if (Uargument > 10){
+            if (i > 10) {
                 System.out.println("Введіть значення у діапазоні від 1 до 10");
                 System.exit(0);
-            }
-            if (Uargument == Cargument){
+            } else if (Uargument == Cargument) {
                 System.out.println("Ви вгадали число! З перемогою!!!");
                 break;
             }
-                System.out.println("Спробуйте ще раз)");
-                System.out.println();
+
+            System.out.println("Спробуйте ще раз)");
+            System.out.println();
         }
 
     }
